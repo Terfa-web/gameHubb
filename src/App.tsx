@@ -1,4 +1,12 @@
-import { Box, Button, ButtonGroup, Flex, HStack, Show } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Text,
+  ButtonGroup,
+  Flex,
+  HStack,
+  Show,
+} from "@chakra-ui/react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
@@ -15,6 +23,7 @@ export interface GameQuery {
   platform: Platform | null;
   sortOrder: string;
   searchText: string;
+  pageSize: number;
 }
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);

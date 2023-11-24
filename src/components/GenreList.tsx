@@ -6,6 +6,7 @@ import {
   Spinner,
   Button,
   Heading,
+  Box,
 } from "@chakra-ui/react";
 import useGenres from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
@@ -22,7 +23,7 @@ const GenreList = () => {
   if (isLoading) return <Spinner />;
   return (
     <>
-      <Heading fontSize="2xl" marginBottom={2}>
+      <Heading marginY={16} fontSize="2xl" marginBottom={2}>
         Genres
       </Heading>
       <List>

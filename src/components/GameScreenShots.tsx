@@ -16,7 +16,7 @@ const GameScreenShots = ({ gameId }: Props) => {
 
   return (
     <>
-      <SimpleGrid minChildWidth="350px" gap={2}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap={2}>
         {images?.map((image) => (
           <Image key={image.id} src={getCroppedImageUrl(image.image)} />
         ))}

@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
       <NavBar margin-bottom={5} />
-      <Box padding={5}>
+      <Box p={5}>
         <Outlet />
       </Box>
     </>

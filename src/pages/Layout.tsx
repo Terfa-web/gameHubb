@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <NavBar />
+      <NavBar margin-bottom={5} />
       <Box padding={5}>
         <Outlet />
       </Box>

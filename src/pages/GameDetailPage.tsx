@@ -21,7 +21,7 @@ const GameDetialpage = () => {
 
   return (
     <>
-      <SimpleGrid columns={{ base: 1, md: 2 }} pt={5}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} p={50}>
         <GridItem>
           <Heading>{game.name}</Heading>
           <ExpandableText>{game.description_raw}</ExpandableText>
